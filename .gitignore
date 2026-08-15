@@ -216,3 +216,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML datasets
+data/raw/
+data/processed/
+
+# Generated models
+models/*.pkl
+models/*.pth
+models/*.joblib
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
