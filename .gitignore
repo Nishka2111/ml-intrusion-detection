@@ -243,3 +243,7 @@ models/*.joblib
 *.db
 *.sqlite
 *.sqlite3
+
+data/raw/
+data/processed/*.csv
+data/sample/*.csv
