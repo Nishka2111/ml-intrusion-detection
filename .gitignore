@@ -1,8 +1,12 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
+*.py[codz]
 *$py.class
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -16,29 +20,33 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# Virtual Environments (keep specific ones for frontend/backend)
-.venv/
+# Environments
+.env
+.envrc
+.venv
+env/
 venv/
 ENV/
-env/
 
-# IDE
+# IDE / Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# Environment variables
-.env
+tempCodeRunnerFile.py
 
 # Database
-instance/*.db
+instance/
 *.db
+*.sqlite
+*.sqlite3
 
 # Logs
 *.log
@@ -47,11 +55,14 @@ instance/*.db
 .DS_Store
 Thumbs.db
 
-# ML Models (large files)
-models/*.joblib
-models/*.pkl
-
-# Datasets and archives
+# ML datasets & archives
+data/raw/
+data/processed/
 *.zip
 B365/
-_tmp_r.txt
+_tmp_r.txt
+
+# Generated models
+models/*.pkl
+models/*.pth
+models/*.joblib
