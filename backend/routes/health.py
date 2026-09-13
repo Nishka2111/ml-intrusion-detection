@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from backend.services.prediction_service import _DEFAULT_MODEL_PATH, is_model_loaded
+from backend.services.prediction_service import DEFAULT_MODEL_PATH, is_model_loaded
 
 health_bp = Blueprint("health", __name__)
 
@@ -10,5 +10,5 @@ def health():
     return jsonify({
         "status": "ok",
         "mode": "ml" if is_model_loaded() else "demo",
-        "model_path": _DEFAULT_MODEL_PATH,
+        "model_path": DEFAULT_MODEL_PATH,
     }), 200

@@ -7,7 +7,7 @@ from backend.services.features import DATASET_FEATURES, normalise_feature_dict
 
 EXPECTED_FEATURE_COUNT = 78
 
-# Pre-computed map: normalised -> canonical index
+
 _NORMALISED_INDEX_MAP: dict[str, int] = {}
 for i, name in enumerate(DATASET_FEATURES):
     norm = (
