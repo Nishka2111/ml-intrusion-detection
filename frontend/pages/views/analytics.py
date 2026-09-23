@@ -1,5 +1,5 @@
 import streamlit as st
-from components.status import render_status_widget
+from frontend.components.components.status import render_status_widget
 
 def render():
     # Advanced Cyber Theme & Interactive Card Effects CSS Injection

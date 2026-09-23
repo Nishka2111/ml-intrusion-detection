@@ -1,5 +1,5 @@
 import streamlit as st
-from services import mock_data
+from frontend.services import mock_data
 
 def render():
     # Advanced Cyber Theme & Professional Table CSS Injection with Shine Effect

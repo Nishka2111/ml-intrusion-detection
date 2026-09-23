@@ -1,5 +1,5 @@
 import streamlit as st
-from services import api_client
+from frontend.services import api_client
 
 def render():
     # Advanced Cyber Theme & Professional Alert Icons CSS Injection

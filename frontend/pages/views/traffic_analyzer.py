@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-from utils.helpers import DATASET_FEATURES, format_title
-from services import api_client
+from frontend.utils.helpers import DATASET_FEATURES, format_title
+from frontend.services import api_client
 
 def render():
     # Modern Dark Cyber Theme CSS Injection
