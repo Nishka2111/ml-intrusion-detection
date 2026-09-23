@@ -177,7 +177,7 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
-
+ 
 # Cython debug symbols
 cython_debug/
 
@@ -243,3 +243,7 @@ models/*.joblib
 *.db
 *.sqlite
 *.sqlite3
+
+data/raw/
+data/processed/*.csv
+data/sample/*.csv
