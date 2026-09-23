@@ -50,9 +50,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-from utils.styles import inject_global_css
-from components.sidebar import render_sidebar
-from views import dashboard, traffic_analyzer, live_detection, alerts, logs, analytics, about
+from frontend.utils.styles import inject_global_css
+from frontend.components.components.sidebar import render_sidebar
+from frontend.pages.views import dashboard, traffic_analyzer, live_detection, alerts, logs, analytics, about
 
 inject_global_css()
 render_sidebar()

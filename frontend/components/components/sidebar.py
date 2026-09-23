@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from utils.helpers import load_logo
+from frontend.utils.helpers import load_logo
 
 def render_sidebar():
     # Session State Default Setup

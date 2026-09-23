@@ -1,5 +1,5 @@
 import numpy as np
-from services import mock_data
+from frontend.services import mock_data
 
 def get_system_info():
     return {"status": "Online", "model_accuracy": "96.8%", "precision": "95.4%", "f1_score": "95.1%"}

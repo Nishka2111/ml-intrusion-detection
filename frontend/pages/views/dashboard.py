@@ -1,10 +1,10 @@
 import streamlit as st
-from services import api_client
-from components.header import render_header
-from components.cards import render_kpi_card
-from components.charts import render_donut_chart, render_traffic_line_chart
-from components.tables import render_predictions_table
-from components.status import render_status_widget
+from frontend.services import api_client
+from frontend.components.components.header import render_header
+from frontend.components.components.cards import render_kpi_card
+from frontend.components.components.charts import render_donut_chart, render_traffic_line_chart
+from frontend.components.components.tables import render_predictions_table
+from frontend.components.components.status import render_status_widget
 
 def render():
     # CSS to force equal height on bottom row containers
