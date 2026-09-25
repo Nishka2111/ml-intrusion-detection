@@ -60,6 +60,30 @@ def build_model_input(features: dict, model=None) -> np.ndarray:
     """Build the final input row matrix for sklearn / XGBoost / PyTorch model."""
     canonical = align_to_canonical_vector(features)
 
+    print("\n========== MODEL INPUT DEBUG ==========")
+    print("Received feature count:", len(features))
+    print("Received feature names:", list(features.keys())[:10])
+
+    canonical = align_to_canonical_vector(features)
+
+    print("Canonical shape:", canonical.shape)
+    print("Non-zero values:", np.count_nonzero(canonical))
+    print("First 10 values:", canonical[0][:10])
+
+    feature_names = getattr(model, "feature_names_in_", None)
+
+    if feature_names is not None:
+        canonical = reorder_to_model_features(
+            canonical,
+            list(feature_names)
+        )
+
+    print("Final shape:", canonical.shape)
+    print("Final non-zero values:", np.count_nonzero(canonical))
+    print("Final first 10 values:", canonical[0][:10])
+
+    print("=======================================\n")
+
     # 1. Feature names re-ordering if present on model
     feature_names = getattr(model, "feature_names_in_", None)
     if feature_names is not None:
